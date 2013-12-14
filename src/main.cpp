@@ -2007,7 +2007,7 @@ bool LoadBlockIndex(bool fAllowNew)
             return false;
 
         // Genesis block
-        const char* pszTimestamp = "Spain's Sorteo Extraordinario de Navidad (Spanish Christmas Lottery) is the world's largest lottery and has the largest first prize jackpot. In 2012, the main jackpot was €720 million (US$941.8 million).";
+        const char* pszTimestamp = "In 2013, the my main jackpot was the 5% health insurance return.";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -2019,13 +2019,13 @@ bool LoadBlockIndex(bool fAllowNew)
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1386557612;
+        block.nTime    = 1387024250;
         block.nBits    = 0x1e0ffff0;
         block.nNonce   = 12481248;
 
 		if (fTestNet)
         {
-            block.nTime    = 1386000000;
+            block.nTime    = 1387000000;
             block.nNonce   = 0;
         }
 
